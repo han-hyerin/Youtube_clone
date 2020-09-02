@@ -1,5 +1,5 @@
 //Global
-const Home = "/";
+const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
@@ -10,7 +10,7 @@ const SEARCH = "/search";
 const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
-const EDIT_PASSWORD = "/edit-password";
+const CHANGE_PASSWROD = "/change-password";
 
 //videoss
 
@@ -21,11 +21,11 @@ const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
-  home: Home,
+  home: HOME,
   join: JOIN,
   login: LOGIN,
   logout: LOGOUT,
-  search: SEARC,
+  search: SEARCH,
   users: USERS,
   userDetail: USER_DETAIL,
   editProfile: EDIT_PROFILE,
