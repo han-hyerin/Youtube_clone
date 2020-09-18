@@ -7,6 +7,14 @@ const volumeBtn = document.getElementById("jsVolumeBtn");
 const fullScreenBtn = document.getElementById("jsFullScreen");
 const currentTime = document.getElementById("currentTime");
 const totalTime = document.getElementById("totalTime");
+const volumeRange = document.getElementById("jsVolume");
+
+const registerView = () => {
+  const videoID = window.location.href.split("/videos/")[1];
+  fetch(`/api/${videoID}/views`, {
+    method: "POST",
+  });
+};
 
 function handlePlayClick() {
   if (videoPlayer.paused) {
